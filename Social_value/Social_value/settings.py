@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'Social-value-app',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -74,10 +75,14 @@ WSGI_APPLICATION = 'Social_value.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'HOST': 'packy.db.elephantsql.com',
+            'PORT': '5432',
+            'NAME': 'cotdswsy',
+            'USER': 'cotdswsy',
+            'PASSWORD': 'M4UI0cLD8qkY4xEvGrd27_O50S4fjWT0',
+        }
 }
 
 
