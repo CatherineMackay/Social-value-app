@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de55c983-dee0-4006-aedc-7c70a439121a" name="Default Changelist" comment="" />
+    <list default="true" id="de55c983-dee0-4006-aedc-7c70a439121a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Social-value-app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Social_value/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Social_value/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Social_value/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Social_value/Social_value/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Social_value/Social_value/settings.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
