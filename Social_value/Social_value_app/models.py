@@ -1,5 +1,8 @@
 from django.db import models
 import datetime
+from pgcrypto import fields
+
+#first_name = fields.TextPGPSymmetricKeyField(blank=False, null=False)
 
 #to be changed later
 """RAG_CHOICES = (
@@ -30,6 +33,6 @@ class Questionnaire(models.Model):
 
 class SME(models.Model):
     company_id_no = models.IntegerField(primary_key=True)
-    SME_name_tx = models.CharField(max_length=3000, default="")
+    SME_name_tx = fields.TextPGPSymmetricKeyField(blank=False, null=False) #models.CharField(max_length=3000, default="")
     email_tx = models.CharField(max_length=3000, default="")
     questionnaire_no = models.ForeignKey(Questionnaire, on_delete=models.CASCADE)
