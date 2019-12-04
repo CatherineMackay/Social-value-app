@@ -80,11 +80,11 @@ WSGI_APPLICATION = 'Social_value.wsgi.application'
 DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'HOST': 'packy.db.elephantsql.com',
+            'HOST': 'localhost',
             'PORT': '5432',
-            'NAME': 'cotdswsy',
-            'USER': 'cotdswsy',
-            'PASSWORD': 'M4UI0cLD8qkY4xEvGrd27_O50S4fjWT0',
+            'NAME': 'cheeseandbiscuits',
+            'USER': 'postgres',
+            'PASSWORD': 'pathfinderdev',
         }
 }
 
