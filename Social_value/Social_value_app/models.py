@@ -16,7 +16,7 @@ class Question(models.Model):
     question_no = models.IntegerField(primary_key=True)
     quest_tx = models.CharField(max_length=1000, default="")
     # quest_tx = fields.TextPGPSymmetricKeyField(blank=False, null=False)
-    # quest_tx_hash = fields.TextHMACField(original='quest_tx')
+    # quest_tx_hash = fields.TextHMACField(original='quest_tx') test
     eval_tx = models.CharField(max_length=1000, default="")
     evidence_tx = models.CharField(max_length=1000, default="")
     results_tx = models.CharField(max_length=1000, default="")
