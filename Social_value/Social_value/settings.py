@@ -80,13 +80,16 @@ WSGI_APPLICATION = 'Social_value.wsgi.application'
 DATABASES = {
 
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'HOST': '127.0.0.1',
+        'NAME': 'pathfinder-local-dev',
         'USER': 'postgres',
-        'HOST': 'db',
-        'PORT': 5432,
+        'PASSWORD': 'pathfinderdev',
+        'PORT': '5432',
     }
-}
+} 
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
