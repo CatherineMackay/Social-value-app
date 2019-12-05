@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block reports %}
+<div class="container">
+    <form id="searchForm1" action="{% url 'personnel-search' %}" method="get">
+        <div class="form-group row">
+            <label for="inputNiNo3" class="col-sm-2 col-form-label">NiNo</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputNiNo3" name="nino" value="{{nino}}">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputFirstName3" class="col-sm-2 col-form-label">First Name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputFirstName3" name="firstname" value="{{firstname}}">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputSurname3" class="col-sm-2 col-form-label">Surname</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputSurname3" name="surname" value="{{surname}}">
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <button id="btnSearch" type="submit" class="btn btn-primary">Search</button>
+                <button id="btnClear" type="button" class="btn btn-primary" onclick="cleanSearchReportForm()">Clear</button>
+            </div>
+        </div>
+        {{message}}
+    </form>
+
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td>{{person_archs.first_name}}</td>
+        </tr>
+            <td>Surname:</td>
+            <td>{{person_archs.last_name}}</td>
+    </table>
+</div>
+{% endblock %}
+
